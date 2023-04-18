@@ -1,0 +1,175 @@
+/* Author: Lex Waldoch
+    Date: 3/31/2023
+    Description: CSS file for the Chazen Museum of Art website
+    Path: style.css */
+
+/* || Museo.html specific styles */
+
+/* Reset all default browser styles */
+body {
+  margin: 0;
+  margin-top: 50px;
+  font-family: Verdana, Tahoma, sans-serif;
+  background-color: #faf9f6;
+  /* off white color */
+}
+
+/* Format all headers */
+header {
+  display: flex;
+  position: fixed;
+  z-index: 200;
+  /* Large number so the header will always display above content */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  padding: 20px;
+  background-color: #faf9f6;
+  /* off white color */
+}
+
+/* All header contents will display to these conditions */
+header * {
+  display: inline;
+  height: 50px;
+}
+
+/* Adds padding between logo and navbar */
+header ul {
+  padding: 20px;
+}
+
+/* Adds padding between navbar options*/
+header li {
+  margin-left: 50px;
+}
+
+/* Changes navbar text to black */
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Format all sections */
+section {
+  height: 80vh;
+  /* Displays as 80% of the deafult browser font size */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Fix footer to always be at the bottom of the page, and centered */
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* Creates translucent background with image of Chazen */
+#home {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("https://images.adsttc.com/media/images/51f7/4ad5/e8e4/4ef7/d400/0092/slideshow/MSA_Chazen_ArchDaily_2011AG43.493.jpg?1375161032");
+}
+
+/* Sets home header font size */
+#home h1 {
+  font-size: 3em;
+}
+
+/* Sets h2 header font size */
+section h2 {
+  font-size: 2.5em;
+}
+
+/* Small header section type */
+#small-header {
+  height: 30vh;
+  z-index: 100;
+}
+
+/* Fixes image display in block */
+#images {
+  display: block;
+  position: relative;
+}
+
+/* Creates columns that are left-associative */
+.column {
+  float: left;
+  width: 60vh;
+  padding: 10px;
+}
+
+/* Images translucent before hover */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+}
+
+/* Images opaque after hover */
+.column img:hover {
+  opacity: 1;
+}
+
+/* || User.html specific styles */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Input areas for contact details */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Format look of submit button */
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Submit button lightens on hover */
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Fix display for profile picture in a circle */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+}
+
+.file-upload {
+  padding-top: 25px;
+}

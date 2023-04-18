@@ -1,0 +1,90 @@
+<!-- Author: Lex Waldoch
+    Date: 3/31/2023 
+    Description: User account page for Museo
+    Path: User.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Museo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Mueso logo -->
+      <img
+        src="https://i.ibb.co/XDb2stV/Museo.png"
+        width="160"
+        class="profile-img"
+      />
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="Museo.html">Home</a></li>
+          <li><a href="QR.html">QR</a></li>
+          <li><a href="Favorites.html">Favorites</a></li>
+          <li><a href="User.html">User Account</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Profile information header and info -->
+      <section id="small-header">
+        <div class="section-inner">
+          <h2>Profile Information</h2>
+          <p>Tell us a bit about yourself!</p>
+        </div>
+      </section>
+      <!-- User info section -->
+      <section id="section-inner">
+        <ul style="list-style-type: none">
+          <li>
+            <div class="circle">
+              <!-- User profile image -->
+              <img
+                class="profile-pic"
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+              />
+            </div>
+          </li>
+          <li>
+            <input class="file-upload" type="file" accept="image/*" />
+          </li>
+        </ul>
+        <!-- Edit contact details -->
+        <form id="profile-form">
+          <div class="form-group">
+            <label for="full-name">Name:</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="My Name"
+            />
+            <!-- <button id="edit-full-name" class="edit-button">Edit</button> -->
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="myemail@example.com"
+            />
+            <!--<button id="edit-email" class="edit-button">Edit</button> -->
+          </div>
+          <button type="submit" id="save-changes" class="save-button">
+            Save Changes
+          </button>
+        </form>
+      </section>
+    </main>
+    <!-- Museo footer -->
+    <footer>© Copyright Museo, 2023</footer>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- JS file used to import file upload behavior -->
+    <script src="script.js"></script>
+  </body>
+</html>
